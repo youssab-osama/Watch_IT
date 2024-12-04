@@ -1,4 +1,4 @@
-package cis.asu.watch_it;
+package mainPack;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
