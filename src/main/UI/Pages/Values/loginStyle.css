@@ -1,0 +1,34 @@
+.container {
+    -fx-background-color: black;
+    -fx-padding: 20;
+    -fx-font-family: 'Poppins', sans-serif;
+}
+
+.input-field {
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-font-size: 14;
+    -fx-background-color: #DCA523;
+    -fx-text-fill: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 10;
+}
+
+.submit-btn {
+    -fx-background-color: #DCA523;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.submit-btn:hover {
+    -fx-background-color: #aa7a11;
+}
+
+.sign-up-link {
+    -fx-text-fill: white;
+}

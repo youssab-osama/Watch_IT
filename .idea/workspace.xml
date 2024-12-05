@@ -5,20 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Premium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Standard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/watch_record/WatchRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/LoginPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/ProfileUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/SubscriptionUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/Values/hello-view2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/Values/loginStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/Values/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/Untitled_video_-_Made_with_Clipchamp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/notification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/padlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/peter 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/peter 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/subcriptions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/Pages/images/watchitmena_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/Values/hello-view2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/Values/loginStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/Values/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/Untitled_video_-_Made_with_Clipchamp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/notification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/padlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/peter 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/peter 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/subcriptions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI/assets/images/watchitmena_logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cis/asu/watch_it/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cis/asu/watch_it/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cis/asu/watch_it/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +62,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Peter-Refaat"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Peter-Refaat&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/youssab-osama/Watch_IT.git",
-    "accountId": "609039e6-f889-4c9e-b3ba-46b79585d3f9"
+    "url": "https://github.com/youssab-osama/Watch_IT",
+    "accountId": "8e388218-1894-4c11-b84a-87831174b881"
   }
 }]]></component>
   <component name="MavenImportPreferences">
@@ -72,14 +93,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "packaging-and-classes",
+    "git-widget-placeholder": "ProfileUI",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/University/OOP Project/Watch_IT/Javafx/javafx-sdk-21.0.5/lib",
+    "last_opened_file_path": "C:/Users/Bavly/IdeaProjects/Watch_IT/src/main/UI/Pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,7 +117,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bavly\IdeaProjects\Watch_IT\src\main\UI\Pages" />
+      <recent name="C:\Users\Bavly\IdeaProjects\Watch_IT\src\main\java\mainPack" />
+      <recent name="C:\Users\Bavly\IdeaProjects\Watch_IT\src\main\UIPages\assets" />
+      <recent name="C:\Users\Bavly\IdeaProjects\Watch_IT\src\main\UIPages\ProfileUI" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bavly\IdeaProjects\Watch_IT\src\main\UIPages" />
       <recent name="C:\University\OOP Project\Watch_IT\src" />
     </key>
   </component>
@@ -108,14 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
