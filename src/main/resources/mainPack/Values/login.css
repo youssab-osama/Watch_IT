@@ -35,7 +35,7 @@ body {
 /* Input Field Styles */
 .input-field {
     -fx-background-color: white;
-
+    -fx-text-inner-color: black;
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
 }

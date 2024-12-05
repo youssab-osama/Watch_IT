@@ -1,17 +1,29 @@
 package mainPack;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 public class LoginController {
     @FXML
     private Label welcomeText;
 
     @FXML
-    protected void OnSubmit(String value) {
-        System.out.println("this is: "+value);
+    TextField username = new TextField();
+    @FXML
+    TextField password = new TextField();
+    @FXML
+    protected void onSubmit() {
+        // Retrieve text from the TextField
+        String input = username.getText();
+        System.out.println("User Input: " + input);
     }
+
     @FXML
     protected void OnButtonClick() {
-        System.out.println("Welcome to JavaFX Application!");
+        String usernameText = username.getText();
+        System.out.println("Username: " + usernameText);
+
+        String passwordText = password.getText();
+        System.out.println("User Password: " + passwordText);
     }
 
 
