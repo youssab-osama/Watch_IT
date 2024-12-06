@@ -47,7 +47,7 @@
                                  <Font size="8.0" />
                               </font>
                            </Label>
-                           <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your first name" style="-fx-background-color: black; -fx-padding: 10;">
+                           <TextField fx:id="firstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your first name" style="-fx-background-color: black; -fx-padding: 10;">
                               <font>
                                  <Font size="14.0" />
                               </font>
@@ -63,7 +63,7 @@
                            <Font size="8.0" />
                         </font>
                      </Label>
-                     <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your last name" style="-fx-background-color: black; -fx-padding: 10;">
+                     <TextField fx:id="lastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your last name" style="-fx-background-color: black; -fx-padding: 10;">
                         <font>
                            <Font size="14.0" />
                         </font>
@@ -77,13 +77,13 @@
                </VBox>
                <VBox spacing="10">
                   <children>
-                     <PasswordField fx:id="password1" prefHeight="0.0" prefWidth="553.0" promptText="Enter your username" style="-fx-background-color: black; -fx-padding: 10;" />
+                     <PasswordField fx:id="username" prefHeight="0.0" prefWidth="553.0" promptText="Enter your username" style="-fx-background-color: black; -fx-padding: 10;" />
                   </children>
                </VBox>
                <VBox prefHeight="79.0" prefWidth="553.0">
                   <children>
                      <Label prefHeight="35.0" prefWidth="102.0" style="-fx-font-size: 16;" text="Email:" />
-                     <PasswordField fx:id="password2" promptText="Enter your email" style="-fx-background-color: black; -fx-padding: 10;" />
+                     <PasswordField fx:id="email" promptText="Enter your email" style="-fx-background-color: black; -fx-padding: 10;" />
                   </children>
                </VBox>
                <VBox spacing="10">
@@ -96,7 +96,7 @@
 
                 <!-- Buttons -->
                 <VBox spacing="10">
-                    <Button onAction="#OnButtonClick" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;" text="Sign Up">
+                    <Button fx:id="signUpButton" onAction="#OnButtonClick" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;" text="Sign Up">
                   <font>
                      <Font size="13.0" />
                   </font></Button>

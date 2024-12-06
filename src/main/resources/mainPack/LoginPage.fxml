@@ -51,7 +51,7 @@
                 <!-- Buttons -->
                 <VBox spacing="10">
                     <Button onAction="#OnButtonClick" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;" text="Login" />
-                    <Button style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Sign Up" />
+                    <Button fx:id="signUpButton" onAction="#onSignUp" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Sign Up" />
                 </VBox>
 
                 <!-- Forgot Password -->
