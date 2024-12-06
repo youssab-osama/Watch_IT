@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ContentManager {
     private List<Content> contentList;
@@ -55,10 +57,19 @@ public class ContentManager {
 
     //the based on rating one it will take an input of int(rating) and return anything that has
     // a rating higher than the one sent
-
+    public List<Content> filterOnRating(float minRating){
+        return contentList.stream().filter(content -> content.getRating() >=minRating).collect(Collectors.toList());
+    }
     //for the movie duration it will be the same as the rating
-
+    public List<Content> filterOnDuration(float minDuration){
+        return contentList.stream().filter(content -> content.getDuration() >=minDuration).collect(Collectors.toList());
+    }
     //the language one  will just return a list with the matching movies
+    public List<Content> filterOnLanguage(String language){
+        return contentList.stream().filter(content -> content.getLanguage().toLowerCase().equals(language.toLowerCase())).collect(Collectors.toList());
+    }
+
+
 
     // The user can also search and display all movies by the genre of
     //movie. (cross over between the search and content manager will be handled later) :
