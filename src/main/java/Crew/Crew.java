@@ -10,7 +10,7 @@ public abstract class Crew {
     private String gender;
     private String nationality;
     private Date dateOfBirth;
-    private List<String> socialMedia;
+
 
     //professional details
     private final int CrewID;
@@ -18,7 +18,7 @@ public abstract class Crew {
     //Constructor
 
 
-    public Crew(String firstName, String lastName, String gender, Date dateOfBirth, String nationality, int crewID,List<String> SocialMedia) {
+    public Crew(String firstName, String lastName, String gender, Date dateOfBirth, String nationality, int crewID) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -39,10 +39,6 @@ public abstract class Crew {
         this.lastName = lastName;
     }
 
-    public void addSocialMedia(String account) {
-        this.socialMedia.add(account);
-
-    }
     //    public void setPreviousProjects(List<String> previousProjects) {
 //        PreviousProjects = previousProjects;
 //    }
@@ -77,11 +73,6 @@ public abstract class Crew {
         return CrewID;
     }
 
-    public void displaySocialMedia() {
-        for(String s : socialMedia){
-            System.out.println(s);
-        }
-    }
 
 
 //    public List<String> getPreviousProjects() {
@@ -96,4 +87,4 @@ public abstract class Crew {
 //filter movies
 //show series
 //show shows
-//social media
+

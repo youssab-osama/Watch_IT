@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added content package and ContentManager class&#10;&#10;This reverts commit 7676e3cf">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Crew/CrewManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Crew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Crew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +75,7 @@
     "git-widget-placeholder": "contentBranch",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/moham/IdeaProjects/libraryManagmentSystem",
+    "last_opened_file_path": "C:/Users/moham/IdeaProjects/javaTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +91,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moham\ProjectOOP\Watch_IT\src\main\java\Crew" />
       <recent name="C:\University\OOP Project\Watch_IT\src" />
     </key>
   </component>
