@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/profile/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Premium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Standard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subscription/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/watch_record/WatchRecord.java" afterDir="false" />
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added content package and ContentManager class&#10;&#10;This reverts commit 7676e3cf">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cis/asu/watch_it/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cis/asu/watch_it/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cis/asu/watch_it/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +29,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Peter-Refaat"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Peter-Refaat&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/youssab-osama/Watch_IT.git",
-    "accountId": "609039e6-f889-4c9e-b3ba-46b79585d3f9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT.git&quot;,
+    &quot;accountId&quot;: &quot;dbf4ba33-0950-43cd-a4df-deb4970c2881&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,14 +60,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "packaging-and-classes",
+    "git-widget-placeholder": "contentBranch",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/University/OOP Project/Watch_IT/Javafx/javafx-sdk-21.0.5/lib",
+    "last_opened_file_path": "C:/Users/moham/IdeaProjects/libraryManagmentSystem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,14 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
