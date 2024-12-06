@@ -10,6 +10,7 @@ public class LoginController {
     TextField username = new TextField();
     @FXML
     TextField password = new TextField();
+
     @FXML
     protected void onSubmit() {
         // Retrieve text from the TextField

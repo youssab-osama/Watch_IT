@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="UI for Profile page">
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Login working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/Values/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/Values/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +56,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2piVzK5W9sT0IIrguc5YFRN6zzK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733440227623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Login working">
+      <option name="closed" value="true" />
+      <created>1733442086592</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733442086592</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +176,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf" />
     <MESSAGE value="UI for Profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI for Profile page" />
+    <MESSAGE value="Login working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
