@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/Intro.java" afterDir="false" />
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="video merged.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" afterDir="false" />
     </list>
-    <list id="34426bae-54fe-4c14-af30-36bbd3b252d3" name="Changes by Bavly" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +139,9 @@
       <workItem from="1733512049343" duration="8377000" />
       <workItem from="1733558554737" duration="926000" />
       <workItem from="1733571276439" duration="4847000" />
-      <workItem from="1733577074020" duration="6521000" />
+      <workItem from="1733577074020" duration="7266000" />
+      <workItem from="1733584691254" duration="4556000" />
+      <workItem from="1733591596976" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf">
       <option name="closed" value="true" />
@@ -206,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733579652241</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="video merged.">
+      <option name="closed" value="true" />
+      <created>1733584009982</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733584009982</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +238,8 @@
     <MESSAGE value="Login working" />
     <MESSAGE value="Added a SceneManager class in order to control the whole program scenes" />
     <MESSAGE value="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8" />
+    <MESSAGE value="video merged." />
+    <option name="LAST_COMMIT_MESSAGE" value="video merged." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

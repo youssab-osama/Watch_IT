@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.LoginController">
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.LoginController">
     <!-- Left Sidebar -->
     <left>
         <VBox alignment="CENTER" prefHeight="720.0" prefWidth="256.0" spacing="20" style="-fx-background-color: #0f0a05; -fx-padding: 30;" stylesheets="@Values/login.css">

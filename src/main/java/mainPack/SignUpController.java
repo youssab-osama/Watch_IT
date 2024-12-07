@@ -17,8 +17,10 @@ public class SignUpController {
 
     @FXML
     private TextField firstName;
+
     @FXML
     private TextField lastName;
+
     @FXML
     private TextField username;
 
@@ -34,23 +36,33 @@ public class SignUpController {
     @FXML
     protected void OnButtonClick() throws IOException {
         Boolean userValid = Validation.validateField(username);
+
         Boolean firstNameValid = Validation.validateField(firstName);
+
         Boolean lastNameValid = Validation.validateField(lastName);
+
         Boolean emailRequired = Validation.validateEmail(email);
+
         Boolean passwordRequired = Validation.validatePassword(password);
+
         if(userValid && firstNameValid && lastNameValid && emailRequired && passwordRequired) {
             try {
+
                 if(FileHandling.isWriterClosed) {
                     FileHandling.writer = new BufferedWriter(new FileWriter("src/main/java/files/usersData.txt",true));
                 }
+
                 FileHandling.writer.write(username.getText() + "," + email.getText() + "\n");
+
                 SceneManager.switchScene("LoginPage.fxml");
             }
             catch (IOException e) {
                 e.printStackTrace();
             }
             finally {
+
                 FileHandling.closeWriter();
+
                 FileHandling.closeReader();
             }
         }
