@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added a SceneManager class in order to control the whole program scenes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/Validation.java" afterDir="false" />
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/Intro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/usersData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/usersData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" afterDir="false" />
     </list>
+    <list id="34426bae-54fe-4c14-af30-36bbd3b252d3" name="Changes by Bavly" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +113,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="23" />
       <option name="MAIN_CLASS_NAME" value="mainPack.Main" />
       <module name="Watch_IT" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;Javafx\javafx-sdk-23.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;Javafx\javafx-sdk-23.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.fxml,javafx.media" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,7 +140,7 @@
       <workItem from="1733512049343" duration="8377000" />
       <workItem from="1733558554737" duration="926000" />
       <workItem from="1733571276439" duration="4847000" />
-      <workItem from="1733577074020" duration="2184000" />
+      <workItem from="1733577074020" duration="6521000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf">
       <option name="closed" value="true" />
@@ -198,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733576221510</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8">
+      <option name="closed" value="true" />
+      <created>1733579652241</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733579652241</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +228,8 @@
     <MESSAGE value="UI for Profile page" />
     <MESSAGE value="Login working" />
     <MESSAGE value="Added a SceneManager class in order to control the whole program scenes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a SceneManager class in order to control the whole program scenes" />
+    <MESSAGE value="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a validation class that handles: 1. empty fields 2. emails without '@' &amp; '.' 3. passwords with length less than 8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
