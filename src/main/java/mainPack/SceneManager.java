@@ -43,7 +43,7 @@ import java.io.IOException;
 public class SceneManager {
     public static Stage stage;
     public static Scene scene;
-    public static final String path = "C:/Users/peter/Downloads/WatchIT_intro.mp4";
+    public static final String path = "src/main/resources/mainPack/Videos/WatchIT_intro.mp4";
     public static MediaView mediaView;
     public static Media media;
     public static MediaPlayer mediaPlayer;
