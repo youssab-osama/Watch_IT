@@ -5,65 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Login working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/files/FileHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/files/usersData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/LoginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/ProfileUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/SubscriptionUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/Values/hello-view2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/Values/loginStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/Values/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/Untitled_video_-_Made_with_Clipchamp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/padlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/peter 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/peter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/subcriptions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/Pages/images/watchitmena_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/Values/hello-view2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/Values/loginStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/Values/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/Untitled_video_-_Made_with_Clipchamp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/padlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/peter 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/peter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/subcriptions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI/assets/images/watchitmena_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/files/usersData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/usersData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/LoginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/ProfileUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/SubscriptionUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/Values/hello-view2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/Values/loginStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/Values/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/Untitled_video_-_Made_with_Clipchamp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/padlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/peter 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/peter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/subcriptions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pages/images/watchitmena_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +105,9 @@
       <recent name="C:\Users\peter\IdeaProjects\Watch_IT\src\main\resources\mainPack\Values" />
       <recent name="C:\Users\peter\IdeaProjects\Watch_IT\src\main\resources\Pages\Values" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mainPack" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -188,7 +138,9 @@
       <updated>1733249144448</updated>
       <workItem from="1733345906317" duration="913000" />
       <workItem from="1733511926985" duration="114000" />
-      <workItem from="1733512049343" duration="7514000" />
+      <workItem from="1733512049343" duration="8377000" />
+      <workItem from="1733558554737" duration="926000" />
+      <workItem from="1733571276439" duration="4097000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf">
       <option name="closed" value="true" />
@@ -222,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733442086592</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login working">
+      <option name="closed" value="true" />
+      <created>1733519967015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733519967015</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

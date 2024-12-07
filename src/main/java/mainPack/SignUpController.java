@@ -52,11 +52,7 @@ public class SignUpController {
                     FileHandling.writer = new BufferedWriter(new FileWriter("src/main/java/files/usersData.txt",true));
                 }
                 FileHandling.writer.write(username.getText() + "," + email.getText() + "\n");
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("LoginPage.fxml"));
-                Scene signUpScene = new Scene(fxmlLoader.load());
-                Stage curStage = (Stage) signUpButton.getScene().getWindow();
-                curStage.setScene(signUpScene);
-                curStage.show();
+                SceneManager.switchScene("LoginPage.fxml");
             } catch (IOException e) {
                 e.printStackTrace();
             }

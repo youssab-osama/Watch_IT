@@ -1,13 +1,9 @@
 package mainPack;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-import files.*;
+
 import java.io.IOException;
 
 public class LoginController {
@@ -46,16 +42,8 @@ public class LoginController {
 
 
     @FXML
-    protected void onSignUp() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SignUp.fxml"));
-            Scene signUpScene = new Scene(fxmlLoader.load());
-            Stage curStage = (Stage) signUpButton.getScene().getWindow();
-            curStage.setScene(signUpScene);
-            curStage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void onSignUp() throws IOException {
+        SceneManager.switchScene("SignUp.fxml");
     }
 
 
