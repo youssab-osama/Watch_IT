@@ -66,7 +66,7 @@ public class ContentManager {
     }
     //the language one  will just return a list with the matching movies
     public List<Content> filterOnLanguage(String language){
-        return contentList.stream().filter(content -> content.getLanguage().toLowerCase().equals(language.toLowerCase())).collect(Collectors.toList());
+        return contentList.stream().filter(content -> content.getLanguage().equalsIgnoreCase(language)).collect(Collectors.toList());
     }
 
 
