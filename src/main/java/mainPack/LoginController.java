@@ -18,15 +18,6 @@ public class LoginController {
     @FXML
     Button signUpButton = new Button();
 
-    private void validateField(TextField field) {
-        if (field.getText().isEmpty()) {
-            field.setStyle("-fx-border-color: red; -fx-border-width: 2;");
-            field.setPromptText("Field cannot be empty");
-        } else {
-            field.setStyle("");
-        }
-    }
-
     @FXML
     protected void onSubmit() {
         // Retrieve text from the TextField
@@ -36,8 +27,8 @@ public class LoginController {
 
     @FXML
     protected void OnButtonClick() throws IOException {
-        validateField(username);
-        validateField(password);
+        Validation.validateField(username);
+        Validation.validateField(password);
     }
 
 

@@ -31,29 +31,22 @@ public class SignUpController {
     @FXML
     Button signUpButton = new Button();
 
-    private void validateField(TextField field) {
-        if (field.getText().isEmpty()) {
-            field.setStyle("-fx-border-color: red; -fx-border-width: 2;");
-            field.setPromptText("Field cannot be empty");
-        } else {
-            field.setStyle("");
-        }
-    }
     @FXML
     protected void OnButtonClick() throws IOException {
-        validateField(username);
-        validateField(email);
-        validateField(password);
-        validateField(firstName);
-        validateField(lastName);
-        if(username.getStyle().isEmpty() && email.getStyle().isEmpty() && password.getStyle().isEmpty() && firstName.getStyle().isEmpty() && lastName.getStyle().isEmpty()) {
+        Boolean userValid = Validation.validateField(username);
+        Boolean firstNameValid = Validation.validateField(firstName);
+        Boolean lastNameValid = Validation.validateField(lastName);
+        Boolean emailRequired = Validation.validateEmail(email);
+        Boolean passwordRequired = Validation.validatePassword(password);
+        if(userValid && firstNameValid && lastNameValid && emailRequired && passwordRequired) {
             try {
                 if(FileHandling.isWriterClosed) {
                     FileHandling.writer = new BufferedWriter(new FileWriter("src/main/java/files/usersData.txt",true));
                 }
                 FileHandling.writer.write(username.getText() + "," + email.getText() + "\n");
                 SceneManager.switchScene("LoginPage.fxml");
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 e.printStackTrace();
             }
             finally {
