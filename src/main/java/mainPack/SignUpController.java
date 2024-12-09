@@ -57,6 +57,11 @@ public class SignUpController {
 
     }
 
+    @FXML
+    protected void onSignIn() throws IOException {
+        SceneManager.switchScene("LoginPage.fxml");
+    }
+
     public void onSubmit(ActionEvent actionEvent) {
     }
 }

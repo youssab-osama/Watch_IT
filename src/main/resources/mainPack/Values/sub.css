@@ -1,0 +1,13 @@
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.custom-toggle {
+    -fx-background-color: #292826;
+     -fx-text-fill: White
+}
+
+.custom-toggle:selected {
+    -fx-background-color: White;
+     -fx-text-fill: Black
+}

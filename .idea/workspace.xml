@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Login working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/VideoController.java" afterDir="false" />
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="new Login &amp; signUp UI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/SubscriptionStepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SubscriptionStepUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPack/Values/sub.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/files/usersData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/usersData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/hello-view2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/loginStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/Untitled_video_-_Made_with_Clipchamp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/padlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/peter 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/peter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/subcriptions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/watchitmena_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +46,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT.git&quot;,
-    &quot;accountId&quot;: &quot;609039e6-f889-4c9e-b3ba-46b79585d3f9&quot;
+    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT&quot;,
+    &quot;accountId&quot;: &quot;8e388218-1894-4c11-b84a-87831174b881&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -86,7 +77,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ProfileUI&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LoginAndSignUp&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/peter/IdeaProjects/Watch_IT/src/main/resources/mainPack/Values&quot;,
@@ -129,14 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
