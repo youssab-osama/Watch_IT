@@ -1,0 +1,612 @@
+Index: src/main/resources/mainPack/LoginPage.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import java.net.URL?>\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.PasswordField?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.BorderPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.layout.StackPane?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<BorderPane prefHeight=\"720.0\" prefWidth=\"1024.0\" xmlns=\"http://javafx.com/javafx/23.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"mainPack.LoginController\">\r\n    <!-- Left Sidebar -->\r\n    <left>\r\n        <VBox alignment=\"CENTER\" prefHeight=\"720.0\" prefWidth=\"256.0\" spacing=\"20\" style=\"-fx-background-color: #0f0a05; -fx-padding: 30;\" stylesheets=\"@Values/login.css\">\r\n         <children>\r\n            <ImageView fitHeight=\"150.0\" fitWidth=\"200.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n               <image>\r\n                  <Image url=\"@images/watchitmena_logo.jpg\" />\r\n               </image>\r\n            </ImageView>\r\n         </children>\r\n        </VBox>\r\n    </left>\r\n\r\n    <!-- Main Content -->\r\n    <center>\r\n        <StackPane style=\"-fx-background-color: #f4b700;\" styleClass=\"main-content\">\r\n            <VBox alignment=\"CENTER\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" prefHeight=\"500.0\" prefWidth=\"416.0\" spacing=\"20\" style=\"-fx-padding: 30;\" styleClass=\"login-content\" stylesheets=\"@Values/login.css\">\r\n                <Label style=\"-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;\" text=\"Login\" />\r\n\r\n                <!-- Username Field -->\r\n                <VBox spacing=\"10\">\r\n                    <Label style=\"-fx-text-fill: white; -fx-font-size: 14px;\" text=\"Username\" />\r\n                    <TextField fx:id=\"username\" onAction=\"#onSubmit\" promptText=\"Enter your username\" style=\"-fx-background-color: black; -fx-padding: 10;\">\r\n                  <font>\r\n                     <Font size=\"14.0\" />\r\n                  </font></TextField>\r\n                </VBox>\r\n\r\n                <!-- Password Field -->\r\n                <VBox spacing=\"10\">\r\n                    <Label style=\"-fx-text-fill: white; -fx-font-size: 14px;\" text=\"Password\" />\r\n                    <PasswordField fx:id=\"password\" promptText=\"Enter your password\" style=\"-fx-background-color: black; -fx-padding: 10;\" />\r\n                </VBox>\r\n\r\n                <!-- Buttons -->\r\n                <VBox spacing=\"10\">\r\n                    <Button onAction=\"#OnButtonClick\" style=\"-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;\" text=\"Login\" />\r\n                    <Button fx:id=\"signUpButton\" onAction=\"#onSignUp\" style=\"-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;\" text=\"Sign Up\" />\r\n                </VBox>\r\n\r\n                <!-- Forgot Password -->\r\n                <HBox alignment=\"CENTER\">\r\n                    <Label style=\"-fx-text-fill: #6A5ACD; -fx-font-size: 12px; -fx-underline: true;\" text=\"Forgot Password?\" />\r\n                </HBox>\r\n            </VBox>\r\n         <stylesheets>\r\n            <URL value=\"@Values/style.css\" />\r\n            <URL value=\"@Values/login.css\" />\r\n         </stylesheets>\r\n        </StackPane>\r\n    </center>\r\n</BorderPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/mainPack/LoginPage.fxml b/src/main/resources/mainPack/LoginPage.fxml
+--- a/src/main/resources/mainPack/LoginPage.fxml	(revision c9471e9e16f6b808b1fd2b75d9bcc904cbe6a95d)
++++ b/src/main/resources/mainPack/LoginPage.fxml	(date 1733705208409)
+@@ -4,7 +4,6 @@
+ <?import javafx.scene.control.Button?>
+ <?import javafx.scene.control.Label?>
+ <?import javafx.scene.control.PasswordField?>
+-<?import javafx.scene.control.TextField?>
+ <?import javafx.scene.image.Image?>
+ <?import javafx.scene.image.ImageView?>
+ <?import javafx.scene.layout.BorderPane?>
+@@ -13,56 +12,75 @@
+ <?import javafx.scene.layout.VBox?>
+ <?import javafx.scene.text.Font?>
+ 
+-<BorderPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.LoginController">
++<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.LoginController">
+     <!-- Left Sidebar -->
+     <left>
+-        <VBox alignment="CENTER" prefHeight="720.0" prefWidth="256.0" spacing="20" style="-fx-background-color: #0f0a05; -fx-padding: 30;" stylesheets="@Values/login.css">
+-         <children>
+-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+-               <image>
+-                  <Image url="@images/watchitmena_logo.jpg" />
+-               </image>
+-            </ImageView>
+-         </children>
++        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="300.0" spacing="20" style="-fx-background-color: #0f0a05; -fx-padding: 30;" stylesheets="@Values/login.css">
++            <children>
++                <ImageView fitHeight="369.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true">
++                    <image>
++                        <Image url="@images/Watchit_logo.jpg" />
++                    </image>
++                </ImageView>
++            </children>
+         </VBox>
+     </left>
+ 
+     <!-- Main Content -->
+     <center>
+         <StackPane style="-fx-background-color: #f4b700;" styleClass="main-content">
+-            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="416.0" spacing="20" style="-fx-padding: 30;" styleClass="login-content" stylesheets="@Values/login.css">
+-                <Label style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" text="Login" />
++            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="951.0" prefWidth="1317.0" spacing="20" style="-fx-padding: 30; -fx-border-radius: 20;" styleClass="login-content" stylesheets="@Values/login.css">
++                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="56.0" prefWidth="502.0" />
++                <Label prefHeight="73.0" prefWidth="495.0" style="-fx-font-size: 50;" text="Sign in" textFill="WHITE">
++                    <font>
++                        <Font name="Berlin Sans FB Bold" size="17.0" />
++                    </font></Label>
+ 
+                 <!-- Username Field -->
+-                <VBox spacing="10">
+-                    <Label style="-fx-text-fill: white; -fx-font-size: 14px;" text="Username" />
+-                    <TextField fx:id="username" onAction="#onSubmit" promptText="Enter your username" style="-fx-background-color: black; -fx-padding: 10;">
+-                  <font>
+-                     <Font size="14.0" />
+-                  </font></TextField>
+-                </VBox>
+-
+-                <!-- Password Field -->
+-                <VBox spacing="10">
+-                    <Label style="-fx-text-fill: white; -fx-font-size: 14px;" text="Password" />
+-                    <PasswordField fx:id="password" promptText="Enter your password" style="-fx-background-color: black; -fx-padding: 10;" />
++                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="560.0" spacing="10">
++                    <VBox spacing="10" />
++                    <VBox prefHeight="79.0" prefWidth="553.0">
++                        <children>
++                            <Label prefHeight="35.0" prefWidth="102.0" style="-fx-font-size: 20;" text="Email:" />
++                            <PasswordField fx:id="email" accessibleRole="TEXT_FIELD" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="47.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
++                                <font>
++                                    <Font size="18.0" />
++                                </font></PasswordField>
++                        </children>
++                    </VBox>
++                    <VBox spacing="10">
++                        <children>
++                            <Label style="-fx-text-fill: white; -fx-font-size: 20;" text="Password" textFill="WHITE" />
++                            <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="552.0" promptText="Password" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
++                                <font>
++                                    <Font size="18.0" />
++                                </font></PasswordField>
++                        </children>
++                    </VBox>
+                 </VBox>
+ 
+                 <!-- Buttons -->
+-                <VBox spacing="10">
+-                    <Button onAction="#OnButtonClick" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;" text="Login" />
+-                    <Button fx:id="signUpButton" onAction="#onSignUp" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Sign Up" />
+-                </VBox>
+-
+-                <!-- Forgot Password -->
+-                <HBox alignment="CENTER">
+-                    <Label style="-fx-text-fill: #6A5ACD; -fx-font-size: 12px; -fx-underline: true;" text="Forgot Password?" />
+-                </HBox>
++                <VBox alignment="CENTER" prefHeight="125.0" prefWidth="1171.0" spacing="10">
++                    <Button fx:id="signUpButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#OnButtonClick" prefHeight="57.0" prefWidth="354.0" style="-fx-background-color: #dba423; -fx-text-fill: black; -fx-font-size: 22; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 10;" text="Sign In">
++                        <font>
++                            <Font size="11.0" />
++                        </font></Button>
++                    <HBox alignment="CENTER">
++                        <children>
++                            <Label style="-fx-font-size: 16;" text="Don’t have an account?" />
++                            <Button maxHeight="-Infinity" maxWidth="-Infinity" onAction="#onSignUp" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: transparent; -fx-text-fill: #db9514; -fx-font-size: 16; -fx-font-weight: Bold;" text="Sign Up" textFill="WHITE">
++                                <font>
++                                    <Font name="System Bold" size="12.0" />
++                                </font>
++                            </Button>
++                        </children>
++                    </HBox>
++                </VBox>
+             </VBox>
+-         <stylesheets>
+-            <URL value="@Values/style.css" />
+-            <URL value="@Values/login.css" />
+-         </stylesheets>
++            <stylesheets>
++                <URL value="@Values/style.css" />
++                <URL value="@Values/login.css" />
++            </stylesheets>
+         </StackPane>
+     </center>
+ </BorderPane>
+Index: src/main/java/mainPack/LoginController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package mainPack;\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.Label;\r\nimport javafx.scene.control.TextField;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class LoginController {\r\n    @FXML\r\n    private Label welcomeText;\r\n\r\n    @FXML\r\n    TextField username = new TextField();\r\n    @FXML\r\n    TextField password = new TextField();\r\n\r\n    @FXML\r\n    Button signUpButton = new Button();\r\n\r\n    @FXML\r\n    protected void onSubmit() {\r\n        // Retrieve text from the TextField\r\n        String input = username.getText();\r\n        System.out.println(\"User Input: \" + input);\r\n    }\r\n\r\n    @FXML\r\n    protected void OnButtonClick() throws IOException {\r\n        Validation.validateField(username);\r\n        Validation.validateField(password);\r\n    }\r\n\r\n\r\n    @FXML\r\n    protected void onSignUp() throws IOException {\r\n        SceneManager.switchScene(\"SignUp.fxml\");\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/mainPack/LoginController.java b/src/main/java/mainPack/LoginController.java
+--- a/src/main/java/mainPack/LoginController.java	(revision c9471e9e16f6b808b1fd2b75d9bcc904cbe6a95d)
++++ b/src/main/java/mainPack/LoginController.java	(date 1733705316554)
+@@ -8,10 +8,7 @@
+ 
+ public class LoginController {
+     @FXML
+-    private Label welcomeText;
+-
+-    @FXML
+-    TextField username = new TextField();
++    TextField email = new TextField();
+     @FXML
+     TextField password = new TextField();
+ 
+@@ -21,21 +18,21 @@
+     @FXML
+     protected void onSubmit() {
+         // Retrieve text from the TextField
+-        String input = username.getText();
++        String input = email.getText();
+         System.out.println("User Input: " + input);
+     }
+ 
+     @FXML
+     protected void OnButtonClick() throws IOException {
+-        Validation.validateField(username);
++        Validation.validateField(email);
+         Validation.validateField(password);
+     }
+ 
+-
+     @FXML
+     protected void onSignUp() throws IOException {
+         SceneManager.switchScene("SignUp.fxml");
+     }
+ 
+ 
++
+ }
+Index: src/main/resources/mainPack/SignUp.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import java.net.URL?>\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.PasswordField?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.BorderPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.layout.StackPane?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<BorderPane prefHeight=\"720.0\" prefWidth=\"1024.0\" xmlns=\"http://javafx.com/javafx/23.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"mainPack.SignUpController\">\r\n    <!-- Left Sidebar -->\r\n    <left>\r\n        <VBox alignment=\"CENTER\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"720.0\" prefWidth=\"236.0\" spacing=\"20\" style=\"-fx-background-color: #0f0a05; -fx-padding: 30;\" stylesheets=\"@Values/login.css\">\r\n            <children>\r\n                <ImageView fitHeight=\"266.0\" fitWidth=\"259.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n                    <image>\r\n                        <Image url=\"@images/watchitmena_logo.jpg\" />\r\n                    </image>\r\n                </ImageView>\r\n            </children>\r\n        </VBox>\r\n    </left>\r\n\r\n    <!-- Main Content -->\r\n    <center>\r\n        <StackPane style=\"-fx-background-color: #f4b700;\" styleClass=\"main-content\">\r\n            <VBox alignment=\"CENTER\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" prefHeight=\"635.0\" prefWidth=\"618.0\" spacing=\"20\" style=\"-fx-padding: 30; -fx-border-radius: 20;\" styleClass=\"login-content\" stylesheets=\"@Values/login.css\">\r\n                <Label style=\"-fx-font-size: 30;\" text=\"Register\">\r\n               <font>\r\n                  <Font name=\"Berlin Sans FB Bold\" size=\"17.0\" />\r\n               </font></Label>\r\n\r\n                <!-- Username Field -->\r\n                <VBox prefHeight=\"432.0\" prefWidth=\"558.0\" spacing=\"10\">\r\n               <HBox prefHeight=\"40.0\" prefWidth=\"553.0\">\r\n                  <children>\r\n                     <VBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" prefHeight=\"66.0\" prefWidth=\"339.0\">\r\n                        <children>\r\n                           <Label prefHeight=\"35.0\" prefWidth=\"103.0\" style=\"-fx-font-size: 16;\" text=\"First Name:\">\r\n                              <font>\r\n                                 <Font size=\"8.0\" />\r\n                              </font>\r\n                           </Label>\r\n                           <TextField fx:id=\"firstName\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" onAction=\"#onSubmit\" prefHeight=\"33.0\" prefWidth=\"154.0\" promptText=\"Enter your first name\" style=\"-fx-background-color: black; -fx-padding: 10;\">\r\n                              <font>\r\n                                 <Font size=\"14.0\" />\r\n                              </font>\r\n                           </TextField>\r\n                        </children>\r\n                     </VBox>\r\n                  </children>\r\n               </HBox>\r\n               <VBox prefHeight=\"64.0\" prefWidth=\"558.0\">\r\n                  <children>\r\n                     <Label prefHeight=\"35.0\" prefWidth=\"103.0\" style=\"-fx-font-size: 16;\" text=\"Last Name:\">\r\n                        <font>\r\n                           <Font size=\"8.0\" />\r\n                        </font>\r\n                     </Label>\r\n                     <TextField fx:id=\"lastName\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" onAction=\"#onSubmit\" prefHeight=\"33.0\" prefWidth=\"154.0\" promptText=\"Enter your last name\" style=\"-fx-background-color: black; -fx-padding: 10;\">\r\n                        <font>\r\n                           <Font size=\"14.0\" />\r\n                        </font>\r\n                     </TextField>\r\n                  </children>\r\n               </VBox>\r\n               <VBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" prefHeight=\"30.0\" prefWidth=\"553.0\">\r\n                  <children>\r\n                     <Label prefHeight=\"35.0\" prefWidth=\"82.0\" style=\"-fx-font-size: 16;\" text=\"Username:\" textFill=\"WHITE\" />\r\n                  </children>\r\n               </VBox>\r\n               <VBox spacing=\"10\">\r\n                  <children>\r\n                     <PasswordField fx:id=\"username\" prefHeight=\"0.0\" prefWidth=\"553.0\" promptText=\"Enter your username\" style=\"-fx-background-color: black; -fx-padding: 10;\" />\r\n                  </children>\r\n               </VBox>\r\n               <VBox prefHeight=\"79.0\" prefWidth=\"553.0\">\r\n                  <children>\r\n                     <Label prefHeight=\"35.0\" prefWidth=\"102.0\" style=\"-fx-font-size: 16;\" text=\"Email:\" />\r\n                     <PasswordField fx:id=\"email\" promptText=\"Enter your email\" style=\"-fx-background-color: black; -fx-padding: 10;\" />\r\n                  </children>\r\n               </VBox>\r\n               <VBox spacing=\"10\">\r\n                  <children>\r\n                     <Label style=\"-fx-text-fill: white; -fx-font-size: 16;\" text=\"Password\" textFill=\"WHITE\" />\r\n                     <PasswordField fx:id=\"password\" promptText=\"Enter your password\" style=\"-fx-background-color: black; -fx-padding: 10;\" />\r\n                  </children>\r\n               </VBox>\r\n                </VBox>\r\n\r\n                <!-- Buttons -->\r\n                <VBox spacing=\"10\">\r\n                    <Button fx:id=\"signUpButton\" onAction=\"#OnButtonClick\" style=\"-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;\" text=\"Sign Up\">\r\n                  <font>\r\n                     <Font size=\"13.0\" />\r\n                  </font></Button>\r\n                    <Button style=\"-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;\" text=\"Login\" />\r\n                </VBox>\r\n            </VBox>\r\n            <stylesheets>\r\n                <URL value=\"@Values/style.css\" />\r\n                <URL value=\"@Values/login.css\" />\r\n            </stylesheets>\r\n        </StackPane>\r\n    </center>\r\n</BorderPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/mainPack/SignUp.fxml b/src/main/resources/mainPack/SignUp.fxml
+--- a/src/main/resources/mainPack/SignUp.fxml	(revision c9471e9e16f6b808b1fd2b75d9bcc904cbe6a95d)
++++ b/src/main/resources/mainPack/SignUp.fxml	(date 1733705776654)
+@@ -13,14 +13,14 @@
+ <?import javafx.scene.layout.VBox?>
+ <?import javafx.scene.text.Font?>
+ 
+-<BorderPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.SignUpController">
++<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.SignUpController">
+     <!-- Left Sidebar -->
+     <left>
+-        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="236.0" spacing="20" style="-fx-background-color: #0f0a05; -fx-padding: 30;" stylesheets="@Values/login.css">
++        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="300.0" spacing="20" style="-fx-background-color: #0f0a05; -fx-padding: 30;" stylesheets="@Values/login.css">
+             <children>
+-                <ImageView fitHeight="266.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
++                <ImageView fitHeight="369.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+-                        <Image url="@images/watchitmena_logo.jpg" />
++                        <Image url="@images/Watchit_logo.jpg" />
+                     </image>
+                 </ImageView>
+             </children>
+@@ -30,77 +30,101 @@
+     <!-- Main Content -->
+     <center>
+         <StackPane style="-fx-background-color: #f4b700;" styleClass="main-content">
+-            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="635.0" prefWidth="618.0" spacing="20" style="-fx-padding: 30; -fx-border-radius: 20;" styleClass="login-content" stylesheets="@Values/login.css">
+-                <Label style="-fx-font-size: 30;" text="Register">
++            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="951.0" prefWidth="1317.0" spacing="20" style="-fx-padding: 30; -fx-border-radius: 20;" styleClass="login-content" stylesheets="@Values/login.css">
++            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="56.0" prefWidth="502.0">
++               <children>
++                  <Label prefHeight="35.0" prefWidth="124.0" style="-fx-text-fill: #bcb6b6;" text="step 1 of 3" textFill="#bcb6b6" />
++               </children>
++            </VBox>
++                <Label style="-fx-font-size: 50;" text="Create your Account" textFill="WHITE">
+                <font>
+                   <Font name="Berlin Sans FB Bold" size="17.0" />
+                </font></Label>
+ 
+                 <!-- Username Field -->
+-                <VBox prefHeight="432.0" prefWidth="558.0" spacing="10">
++                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="565.0" spacing="10">
+                <HBox prefHeight="40.0" prefWidth="553.0">
+                   <children>
+                      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="66.0" prefWidth="339.0">
+                         <children>
+-                           <Label prefHeight="35.0" prefWidth="103.0" style="-fx-font-size: 16;" text="First Name:">
++                           <Label prefHeight="33.0" prefWidth="129.0" style="-fx-font-size: 20;" text="First Name:">
+                               <font>
+                                  <Font size="8.0" />
+                               </font>
+                            </Label>
+-                           <TextField fx:id="firstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your first name" style="-fx-background-color: black; -fx-padding: 10;">
++                           <TextField fx:id="firstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="38.0" prefWidth="551.0" promptText="Enter your first name" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
+                               <font>
+-                                 <Font size="14.0" />
++                                 <Font size="18.0" />
+                               </font>
+                            </TextField>
+                         </children>
+                      </VBox>
+                   </children>
+                </HBox>
+-               <VBox prefHeight="64.0" prefWidth="558.0">
++               <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="64.0" prefWidth="558.0">
+                   <children>
+-                     <Label prefHeight="35.0" prefWidth="103.0" style="-fx-font-size: 16;" text="Last Name:">
++                     <Label prefHeight="31.0" prefWidth="119.0" style="-fx-font-size: 20;" text="Last Name:">
+                         <font>
+                            <Font size="8.0" />
+                         </font>
+                      </Label>
+-                     <TextField fx:id="lastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="33.0" prefWidth="154.0" promptText="Enter your last name" style="-fx-background-color: black; -fx-padding: 10;">
++                     <TextField fx:id="lastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSubmit" prefHeight="40.0" prefWidth="550.0" promptText="Enter your last name" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
+                         <font>
+-                           <Font size="14.0" />
++                           <Font size="18.0" />
+                         </font>
+                      </TextField>
+                   </children>
+                </VBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="553.0">
+                   <children>
+-                     <Label prefHeight="35.0" prefWidth="82.0" style="-fx-font-size: 16;" text="Username:" textFill="WHITE" />
++                     <Label prefHeight="30.0" prefWidth="130.0" style="-fx-font-size: 20;" text="Username:" textFill="WHITE" />
+                   </children>
+                </VBox>
+                <VBox spacing="10">
+                   <children>
+-                     <PasswordField fx:id="username" prefHeight="0.0" prefWidth="553.0" promptText="Enter your username" style="-fx-background-color: black; -fx-padding: 10;" />
++                     <PasswordField fx:id="username" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="550.0" promptText="Enter your username" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
++                        <font>
++                           <Font size="16.0" />
++                        </font></PasswordField>
+                   </children>
+                </VBox>
+                <VBox prefHeight="79.0" prefWidth="553.0">
+                   <children>
+-                     <Label prefHeight="35.0" prefWidth="102.0" style="-fx-font-size: 16;" text="Email:" />
+-                     <PasswordField fx:id="email" promptText="Enter your email" style="-fx-background-color: black; -fx-padding: 10;" />
++                     <Label prefHeight="35.0" prefWidth="102.0" style="-fx-font-size: 20;" text="Email:" />
++                     <PasswordField fx:id="email" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="47.0" prefWidth="552.0" promptText="Enter your email" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
++                        <font>
++                           <Font size="18.0" />
++                        </font></PasswordField>
+                   </children>
+                </VBox>
+                <VBox spacing="10">
+                   <children>
+-                     <Label style="-fx-text-fill: white; -fx-font-size: 16;" text="Password" textFill="WHITE" />
+-                     <PasswordField fx:id="password" promptText="Enter your password" style="-fx-background-color: black; -fx-padding: 10;" />
++                     <Label style="-fx-text-fill: white; -fx-font-size: 20;" text="Password" textFill="WHITE" />
++                     <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="552.0" promptText="Enter your password" style="-fx-background-color: black; -fx-padding: 10; -fx-border-color: transperent;">
++                        <font>
++                           <Font size="18.0" />
++                        </font></PasswordField>
+                   </children>
+                </VBox>
+                 </VBox>
+ 
+                 <!-- Buttons -->
+-                <VBox spacing="10">
+-                    <Button fx:id="signUpButton" onAction="#OnButtonClick" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 5px; -fx-padding: 10;" text="Sign Up">
++                <VBox alignment="CENTER" prefHeight="125.0" prefWidth="1171.0" spacing="10">
++               <Label style="-fx-font-size: 12;" text="By clicking “Next”, you confirm that you have read and agreed to the Terms &amp; Conditions And Privacy Policy" />
++                    <Button fx:id="signUpButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#OnButtonClick" prefHeight="57.0" prefWidth="354.0" style="-fx-background-color: #dba423; -fx-text-fill: black; -fx-font-size: 22; -fx-font-weight: bold; -fx-background-radius: 20; -fx-padding: 10;" text="Next">
+                   <font>
+                      <Font size="13.0" />
+                   </font></Button>
+-                    <Button style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Login" />
++               <HBox alignment="CENTER">
++                  <children>
++                     <Label style="-fx-font-size: 16;" text="Already have an account?" />
++                          <Button maxHeight="-Infinity" maxWidth="-Infinity" onAction="#onSignIn" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-text-fill: #db9514; -fx-font-size: 16; -fx-font-weight: Bold;" text="Sign in" textFill="WHITE">
++                        <font>
++                           <Font name="System Bold" size="12.0" />
++                        </font>
++                     </Button>
++                  </children>
++               </HBox>
+                 </VBox>
+             </VBox>
+             <stylesheets>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"57f9036b-b181-40cd-a385-aaab3c7a709f\" name=\"Changes\" comment=\"Login working\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/mainPack/VideoController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/files/usersData.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/files/usersData.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/Values/hello-view2.fxml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/Values/loginStyle.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/Values/style.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/Untitled_video_-_Made_with_Clipchamp.gif\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/clock.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/history.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/key.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/notification.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/padlock.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/peter 1.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/peter 2.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/settings.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/subcriptions.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/user.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/assets/images/watchitmena_logo.jpg\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Peter-Refaat&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT.git&quot;,\r\n    &quot;accountId&quot;: &quot;609039e6-f889-4c9e-b3ba-46b79585d3f9&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2piVzK5W9sT0IIrguc5YFRN6zzK\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;ProfileUI&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/peter/IdeaProjects/Watch_IT/src/main/resources/mainPack/Values&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.1484375&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,\r\n    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\resources\\mainPack\\Values\" />\r\n      <recent name=\"C:\\Users\\Bavly\\IdeaProjects\\Watch_IT\\src\\main\\resources\\mainPack\" />\r\n      <recent name=\"C:\\Users\\Bavly\\IdeaProjects\\Watch_IT\\src\\main\\resources\" />\r\n      <recent name=\"C:\\Users\\Bavly\\IdeaProjects\\Watch_IT\\src\\main\\UI\\Pages\" />\r\n      <recent name=\"C:\\Users\\Bavly\\IdeaProjects\\Watch_IT\\src\\main\\java\\mainPack\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\UI\\Pages\\Values\" />\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\resources\\mainPack\" />\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\resources\\Pages\" />\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\resources\\mainPack\\Values\" />\r\n      <recent name=\"C:\\Users\\peter\\IdeaProjects\\Watch_IT\\src\\main\\resources\\Pages\\Values\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"23\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"mainPack.Main\" />\r\n      <module name=\"Watch_IT\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"--module-path &quot;Javafx\\javafx-sdk-23.0.1\\lib&quot; --add-modules javafx.controls,javafx.fxml --add-modules javafx.controls,javafx.fxml,javafx.media\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"57f9036b-b181-40cd-a385-aaab3c7a709f\" name=\"Changes\" comment=\"\" />\r\n      <created>1733249144448</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1733249144448</updated>\r\n      <workItem from=\"1733345906317\" duration=\"913000\" />\r\n      <workItem from=\"1733511926985\" duration=\"114000\" />\r\n      <workItem from=\"1733512049343\" duration=\"7514000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1733254923594</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1733254923594</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"UI for Profile page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1733435532993</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1733435532994</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"UI for Profile page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1733440227623</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1733440227623</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Login working\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1733442086592</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1733442086592</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf\" />\r\n    <MESSAGE value=\"UI for Profile page\" />\r\n    <MESSAGE value=\"Login working\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Login working\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c9471e9e16f6b808b1fd2b75d9bcc904cbe6a95d)
++++ b/.idea/workspace.xml	(date 1733705741912)
+@@ -4,26 +4,15 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Login working">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/VideoController.java" afterDir="false" />
++    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="in run config &quot;--add-modules&#10;               javafx.controls,javafx.fxml,javafx.media&quot;">
++      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/SubscriptionStepController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SubscriptionStepUI.fxml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPack/Values/sub.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/files/usersData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/usersData.txt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SceneManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/hello-view2.fxml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/loginStyle.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Values/style.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/Untitled_video_-_Made_with_Clipchamp.gif" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/clock.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/history.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/key.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/notification.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/padlock.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/peter 1.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/peter 2.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/settings.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/subcriptions.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/user.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/images/watchitmena_logo.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/LoginController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/SignUpController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/LoginPage.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPack/SignUp.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -55,8 +44,8 @@
+ }</component>
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT.git&quot;,
+-    &quot;accountId&quot;: &quot;609039e6-f889-4c9e-b3ba-46b79585d3f9&quot;
++    &quot;url&quot;: &quot;https://github.com/youssab-osama/Watch_IT&quot;,
++    &quot;accountId&quot;: &quot;8e388218-1894-4c11-b84a-87831174b881&quot;
+   }
+ }</component>
+   <component name="MavenImportPreferences">
+@@ -129,14 +118,6 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-  </component>
+-  <component name="SharedIndexes">
+-    <attachedChunks>
+-      <set>
+-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+-      </set>
+-    </attachedChunks>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -182,7 +163,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1733442086592</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="in run config &quot;--add-modules&#10;               javafx.controls,javafx.fxml,javafx.media&quot;">
++      <option name="closed" value="true" />
++      <created>1733584909097</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1733584909097</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -203,7 +192,8 @@
+     <MESSAGE value="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf" />
+     <MESSAGE value="UI for Profile page" />
+     <MESSAGE value="Login working" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Login working" />
++    <MESSAGE value="in run config &quot;--add-modules&#10;               javafx.controls,javafx.fxml,javafx.media&quot;" />
++    <option name="LAST_COMMIT_MESSAGE" value="in run config &quot;--add-modules&#10;               javafx.controls,javafx.fxml,javafx.media&quot;" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+Index: src/main/resources/mainPack/SubscriptionStepUI.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/mainPack/SubscriptionStepUI.fxml b/src/main/resources/mainPack/SubscriptionStepUI.fxml
+new file mode 100644
+--- /dev/null	(date 1733648209087)
++++ b/src/main/resources/mainPack/SubscriptionStepUI.fxml	(date 1733648209087)
+@@ -0,0 +1,85 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.CheckBox?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ToggleButton?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.BorderPane?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
++
++<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0f0a07;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPack.SubscriptionStepController">
++    <top>
++        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="183.0" prefWidth="1379.0" spacing="15" style="-fx-background-color: #0f0a05; -fx-padding: 20; -fx-border-color: #26221d;" BorderPane.alignment="CENTER">
++            <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Pick your Favorite Plan" textFill="WHITE">
++            <font>
++               <Font name="System Bold" size="35.0" />
++            </font></Label>
++            <Label style="-fx-text-fill: #CCCCCC; -fx-font-size: 14;" text="Choose the package that suits you from the monthly subscriptions" wrapText="true" />
++        </VBox>
++    </top>
++
++    <center>
++        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="537.0" prefWidth="697.0" spacing="25.0" style="-fx-background-color: #0f0a05; -fx-padding: 30; -fx-border-radius: 16;">
++            <HBox alignment="CENTER" spacing="25" style="-fx-background-color: #0f0a05;" />
++         <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="50.0">
++            <children>
++               <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="411.0" prefWidth="691.0" spacing="15.0">
++                  <children>
++                     <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="655.0" scaleShape="false" spacing="30.0" style="-fx-background-color: #292826; -fx-background-radius: 50;" stylesheets="@Values/sub.css">
++                        <children>
++                               <ToggleButton fx:id="basicButton" prefHeight="50.0" prefWidth="173.0" style="-fx-padding: 10; -fx-background-radius: 30;" styleClass="custom-toggle" text="Basic - with Ads" textFill="WHITE">
++                              <font>
++                                 <Font name="System Bold" size="20.0" />
++                              </font>
++                           </ToggleButton>
++                               <ToggleButton fx:id="standardButton" prefHeight="50.0" prefWidth="209.0" style="-fx-padding: 10; -fx-background-radius: 30;" styleClass="custom-toggle" text="Standard - with Ads" textFill="WHITE">
++                              <font>
++                                 <Font name="System Bold" size="20.0" />
++                              </font>
++                           </ToggleButton>
++                               <ToggleButton fx:id="premiumButton" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="205.0" style="-fx-padding: 10; -fx-background-radius: 30;" styleClass="custom-toggle" stylesheets="@Values/sub.css" text="Premium - No Ads" textFill="WHITE">
++                              <font>
++                                 <Font name="System Bold" size="20.0" />
++                              </font>
++                           </ToggleButton>
++                        </children>
++                     </HBox>
++                     <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="655.0" />
++            
++                        <HBox alignment="CENTER" spacing="25" />
++            
++                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="477.0" spacing="15" style="-fx-border-color: #FFC107; -fx-padding: 20;">
++                        <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="15.0" text="CheckBox" />
++                            <Label style="-fx-font-size: 18; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="30 Movies / Month" />
++                            <Label style="-fx-font-size: 16; -fx-strikethrough: true; -fx-text-fill: #CCCCCC;" text="1320 EGP" />
++                            <Label style="-fx-font-size: 20; -fx-text-fill: #FFC107; -fx-font-weight: bold;" text="149.99 EGP" />
++                            <Label style="-fx-text-fill: #CCCCCC; -fx-font-size: 13;" text="*You can watch through 3 screens only at the same time" wrapText="true" />
++                        </VBox>
++            
++                        <Button prefHeight="45.0" prefWidth="251.0" style="-fx-background-color: #FFC107; -fx-text-fill: #000000; -fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10; -fx-border-radius: 16;" text="Next" />
++                  </children>
++               </VBox>
++            </children>
++         </HBox>
++        </VBox>
++    </center>
++   <left>
++      <VBox alignment="CENTER" prefHeight="537.0" prefWidth="221.0" BorderPane.alignment="CENTER">
++         <children>
++            <ImageView fitHeight="266.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true">
++               <image>
++                  <Image url="@images/Watchit_logo.jpg" />
++               </image>
++            </ImageView>
++            <VBox prefHeight="110.0" prefWidth="263.0" />
++         </children>
++      </VBox>
++   </left>
++   <right>
++      <VBox prefHeight="537.0" prefWidth="223.0" BorderPane.alignment="CENTER" />
++   </right>
++</BorderPane>
+Index: src/main/resources/mainPack/Values/sub.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/mainPack/Values/sub.css b/src/main/resources/mainPack/Values/sub.css
+new file mode 100644
+--- /dev/null	(date 1733616141440)
++++ b/src/main/resources/mainPack/Values/sub.css	(date 1733616141440)
+@@ -0,0 +1,13 @@
++.card {
++  border-radius: 15px;
++  overflow: hidden;
++}
++.custom-toggle {
++    -fx-background-color: #292826;
++     -fx-text-fill: White
++}
++
++.custom-toggle:selected {
++    -fx-background-color: White;
++     -fx-text-fill: Black
++}
+Index: src/main/java/mainPack/SignUpController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package mainPack;\r\n\r\nimport files.FileHandling;\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.BufferedWriter;\r\nimport java.io.FileWriter;\r\nimport java.io.IOException;\r\n\r\npublic class SignUpController {\r\n\r\n    @FXML\r\n    private TextField firstName;\r\n    @FXML\r\n    private TextField lastName;\r\n    @FXML\r\n    private TextField username;\r\n\r\n    @FXML\r\n    private TextField email;\r\n\r\n    @FXML\r\n    private TextField password;\r\n\r\n    @FXML\r\n    Button signUpButton = new Button();\r\n\r\n    @FXML\r\n    protected void OnButtonClick() throws IOException {\r\n        Boolean userValid = Validation.validateField(username);\r\n        Boolean firstNameValid = Validation.validateField(firstName);\r\n        Boolean lastNameValid = Validation.validateField(lastName);\r\n        Boolean emailRequired = Validation.validateEmail(email);\r\n        Boolean passwordRequired = Validation.validatePassword(password);\r\n        if(userValid && firstNameValid && lastNameValid && emailRequired && passwordRequired) {\r\n            try {\r\n                if(FileHandling.isWriterClosed) {\r\n                    FileHandling.writer = new BufferedWriter(new FileWriter(\"src/main/java/files/usersData.txt\",true));\r\n                }\r\n                FileHandling.writer.write(username.getText() + \",\" + email.getText() + \"\\n\");\r\n                SceneManager.switchScene(\"LoginPage.fxml\");\r\n            }\r\n            catch (IOException e) {\r\n                e.printStackTrace();\r\n            }\r\n            finally {\r\n                FileHandling.closeWriter();\r\n                FileHandling.closeReader();\r\n            }\r\n        }\r\n\r\n    }\r\n\r\n    public void onSubmit(ActionEvent actionEvent) {\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/mainPack/SignUpController.java b/src/main/java/mainPack/SignUpController.java
+--- a/src/main/java/mainPack/SignUpController.java	(revision c9471e9e16f6b808b1fd2b75d9bcc904cbe6a95d)
++++ b/src/main/java/mainPack/SignUpController.java	(date 1733705741522)
+@@ -57,6 +57,11 @@
+ 
+     }
+ 
++    @FXML
++    protected void onSignIn() throws IOException {
++        SceneManager.switchScene("LoginPage.fxml");
++    }
++
+     public void onSubmit(ActionEvent actionEvent) {
+     }
+ }
+Index: src/main/java/mainPack/SubscriptionStepController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/mainPack/SubscriptionStepController.java b/src/main/java/mainPack/SubscriptionStepController.java
+new file mode 100644
+--- /dev/null	(date 1733615743919)
++++ b/src/main/java/mainPack/SubscriptionStepController.java	(date 1733615743919)
+@@ -0,0 +1,37 @@
++package mainPack;
++import files.FileHandling;
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Scene;
++import javafx.scene.control.Button;
++import javafx.scene.control.TextField;
++import javafx.scene.control.ToggleButton;
++import javafx.scene.control.ToggleGroup;
++import javafx.stage.Stage;
++
++import java.io.BufferedWriter;
++import java.io.FileWriter;
++import java.io.IOException;
++public class SubscriptionStepController {
++    @FXML
++    private ToggleButton basicButton;
++
++    @FXML
++    private ToggleButton standardButton;
++
++    @FXML
++    private ToggleButton premiumButton;
++    @FXML
++    private ToggleGroup packageToggleGroup;
++    @FXML
++    public void initialize() {
++        packageToggleGroup = new ToggleGroup();
++
++        // Add buttons to the group
++        basicButton.setToggleGroup(packageToggleGroup);
++        standardButton.setToggleGroup(packageToggleGroup);
++        premiumButton.setToggleGroup(packageToggleGroup);
++    }
++
++}
