@@ -1,0 +1,42 @@
+[
+  {
+    "type": "movie",
+    "title": "The Great Adventure",
+    "language": "English",
+    "country": "USA",
+    "genres": ["Action", "Adventure"],
+    "id": 1,
+    "budget": 50000000,
+    "revenue": 120000000,
+    "rating": 8.5,
+    "duration": 135.5,
+    "castList": [101, 102]
+  },
+  {
+    "type": "movie",
+    "title": "Mystery in the Dark",
+    "language": "English",
+    "country": "UK",
+    "genres": ["Mystery", "Thriller"],
+    "id": 2,
+    "budget": 30000000,
+    "revenue": 50000000,
+    "rating": 7.2,
+    "duration": 120.0,
+    "castList": [102]
+  },
+  {
+    "type": "show",
+    "title": "The Last Season",
+    "language": "English",
+    "country": "USA",
+    "genres": ["Drama", "Thriller"],
+    "id": 3,
+    "budget": 100000000,
+    "revenue": 200000000,
+    "rating": 9.1,
+    "duration": 45.0,
+    "numberOfEpisodes": 10,
+    "castList": [101, 103]
+  }
+]

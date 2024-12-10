@@ -1,26 +1,51 @@
 package Content;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javafx.scene.image.Image;
 
+import java.time.LocalDate;
 import java.util.*;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+
+import java.io.File;
+import java.io.IOException;
 
 import Crew.Crew;
 import Crew.CrewManager;
 
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.EXISTING_PROPERTY,
+        property = "type",
+        visible = true
+)
+@JsonSubTypes(value = {
+        @JsonSubTypes.Type(value = Movie.class, name = "movie"),
+        @JsonSubTypes.Type(value = Show.class, name = "show")
+})
 
 public abstract class Content {
-
-    private List<Crew> castList;
-
+    private List<Integer> castIDs;
+    public String type;
     private String title;
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     private String language;
 
     private String country;
 
-    private Date releaseDate;
+    @JsonIgnore
+    //private LocalDate releaseDate;
 
-    private List<String> genres;
+    private  String initDate;
+
+    private List<String> genres = new ArrayList<>();
 
     private int id;
 
@@ -32,27 +57,32 @@ public abstract class Content {
 
     private double duration;
 
+    @JsonIgnore
     private Image poster;
 
-    public Content(int id,String title,String language,String country,Date releaseDate){
+    public Content(){
+        castIDs = new ArrayList<>();
+    }
+    public Content(int id,String title,String language,String country,LocalDate releaseDate){
         this.id = id;
         this.title = title;
         this.language = language;
         this.country = country;
-        this.releaseDate = releaseDate;
-        castList = new ArrayList<>();
+        //this.releaseDate = releaseDate;
+        castIDs = new ArrayList<>();
     }
 
-    public Content(int id,String title,String language,String country,Date releaseDate,int budget,int revenue,double duration,Image poster){
+    public Content(int id,String title,String language,String country,LocalDate releaseDate,int budget,int revenue,double duration,Image poster){
         this(id,title,language,country,releaseDate);
         this.budget = budget;
         this.revenue = revenue;
         this.duration = duration;
-        this.poster = poster;
+        initDate = releaseDate.toString();
+        //this.poster = poster;
     }
 
-    public List<Crew> getCastList() {
-        return castList;
+    public List<Integer> getCastList() {
+        return castIDs;
     }
 
     public String getTitle() {
@@ -67,9 +97,9 @@ public abstract class Content {
         return country;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
-    }
+//    public LocalDate getReleaseDate() {
+//        return releaseDate;
+//    }
 
     public List<String> getGenres() {
         return genres;
@@ -103,12 +133,16 @@ public abstract class Content {
         Collections.addAll(genres, genre);
     }
 
-    public void addCast(String firstName,String secondName) {
-        Crew toAdd = CrewManager.Search(firstName,secondName);
+    public void addCast(String name) {
+        Crew toAdd = CrewManager.Search(name);
         if(toAdd != null) {
-            castList.add(toAdd);
-            //toAdd.addWork(this);
+            castIDs.add(toAdd.getCrewID());
+            toAdd.addContendID(this.id);
         }
     }
+
+
+
 }
+
 // CONTENT CLASS

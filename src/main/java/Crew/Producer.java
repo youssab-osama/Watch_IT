@@ -6,9 +6,13 @@ import java.util.List;
 public class Producer extends Crew
 {
    private String ProductionCompany;
+
+    public Producer(){
+        super();
+    }
     //constructor
-    public Producer(String firstName, String lastName, String gender, Date dateOfBirth, String nationality, int crewID,String productionCompany) {
-        super(firstName, lastName, gender, dateOfBirth, nationality, crewID);
+    public Producer(String type,String firstName, String gender, String dateOfBirth, String nationality, int crewID,String productionCompany) {
+        super(type,firstName, gender, dateOfBirth, nationality, crewID);
         ProductionCompany=productionCompany;
     }
 }

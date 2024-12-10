@@ -1,58 +1,72 @@
 package Crew;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.EXISTING_PROPERTY,
+        property = "type",
+        visible = true
+)
+@JsonSubTypes(value = {
+        @JsonSubTypes.Type(value = Actor.class, name = "actor"),
+        @JsonSubTypes.Type(value = Director.class, name = "director"),
+        @JsonSubTypes.Type(value = Producer.class, name = "Producer")
+})
+
+
+
 public abstract class Crew {
+
+
     //personal details
-    private String firstName;
-    private String lastName;
+    private String type;
+    private String name;
     private String gender;
     private String nationality;
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
 
     //professional details
-    private final int CrewID;
-    //                                private List<> PreviousProjects;
+    private int crewID;
+    private List<Integer> previousProjectsIDs = new ArrayList<>();
     //Constructor
 
+    public Crew(){}
 
-    public Crew(String firstName, String lastName, String gender, Date dateOfBirth, String nationality, int crewID) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Crew(String type,String name, String gender, String dateOfBirth, String nationality, int crewID) {
+        this.type = type;
+        this.name = name;
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.nationality = nationality;
-        CrewID = crewID;
+        crewID = crewID;
 
     }
 
     //setters
-    public void setFirstName(String firstName) {
+    public void setName(String name) {
 
-        this.firstName = firstName;
+        this.name = name;
     }
-
-    public void setLastName(String lastName) {
-
-        this.lastName = lastName;
+    public void setType(String type){
+        this.type = type;
     }
-
-    //    public void setPreviousProjects(List<String> previousProjects) {
-//        PreviousProjects = previousProjects;
-//    }
+        public void setPreviousProjects(List<Integer> previousProjects) {
+        previousProjectsIDs = previousProjects;
+    }
 
     //Getters
 
-    public String getFirstName() {
+    public String getName() {
 
-        return firstName;
-    }
-
-    public String getLastName() {
-
-        return lastName;
+        return name;
     }
 
     public String getGender() {
@@ -65,20 +79,24 @@ public abstract class Crew {
         return nationality;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
     public int getCrewID() {
-        return CrewID;
+        return crewID;
     }
 
+    public  String getType(){
+        return type;
+    }
 
-
-//    public List<String> getPreviousProjects() {
-//
-//        return PreviousProjects;
-//    }
+    public List<Integer> getPreviousProjects() {
+        return previousProjectsIDs;
+    }
+    public void addContendID(int id){
+        previousProjectsIDs.add(id);
+    }
 
 
 

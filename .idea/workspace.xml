@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="Added content package and ContentManager class&#10;&#10;This reverts commit 7676e3cf">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Crew/CrewManager.java" afterDir="false" />
+    <list default="true" id="57f9036b-b181-40cd-a385-aaab3c7a709f" name="Changes" comment="small change to the filterOnLanguage function (to ignore case in strings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainPack/crew.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Content.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/ContentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Actor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Crew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Crew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crew/CrewManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/CrewManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Director.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Crew/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crew/Producer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPack/Main.java" afterDir="false" />
     </list>
@@ -55,6 +60,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -64,31 +72,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "contentBranch",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/moham/IdeaProjects/javaTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.1484375",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;contentBranch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moham/ProjectOOP/Watch_IT&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1484375&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\moham\ProjectOOP\Watch_IT\src\main\java\Crew" />
@@ -124,7 +132,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733254923594</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added content package ,ContentManager class ,crew,crewManager,Movie &#10;&#10;This reverts commit 7676e3cf">
+      <option name="closed" value="true" />
+      <created>1733517457367</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733517457368</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added filtering methods to content Manager ,they filter based on rating ,duration ,language (filtering based on genre will be added later)">
+      <option name="closed" value="true" />
+      <created>1733524757571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733524757571</updated>
+    </task>
+    <task id="LOCAL-00004" summary="small change to the filterOnLanguage function (to ignore case in strings">
+      <option name="closed" value="true" />
+      <created>1733585254219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733585254220</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +175,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Initialize files&quot;&#10;&#10;This reverts commit 7676e3cf" />
+    <MESSAGE value="Added content package ,ContentManager class ,crew,crewManager,Movie &#10;&#10;This reverts commit 7676e3cf" />
+    <MESSAGE value="added filtering methods to content Manager ,they filter based on rating ,duration ,language (filtering based on genre will be added later)" />
+    <MESSAGE value="small change to the filterOnLanguage function (to ignore case in strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change to the filterOnLanguage function (to ignore case in strings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

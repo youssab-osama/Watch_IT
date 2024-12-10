@@ -7,8 +7,12 @@ public class Director extends Crew {
     private List<String> Genres;
     //constructor
 
-    public Director(String firstName, String lastName, String gender, Date dateOfBirth, String nationality, int crewID, List<String> genres) {
-        super(firstName, lastName, gender, dateOfBirth, nationality, crewID);
+    public Director(){
+        super();
+    }
+
+    public Director(String type,String firstName, String gender, String dateOfBirth, String nationality, int crewID, List<String> genres) {
+        super(type,firstName, gender, dateOfBirth, nationality, crewID);
         Genres = genres;
     }
 
