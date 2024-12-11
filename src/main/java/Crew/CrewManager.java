@@ -11,10 +11,10 @@ import java.io.IOException;
 
 
 public class CrewManager {
-    public static ArrayList<Crew> cast = new ArrayList<>();
+    public static ArrayList<Crew> crewList = new ArrayList<>();
     public static Crew Search(String name){
         Crew returnCrew = null;
-        for(Crew crew : cast){
+        for(Crew crew : crewList){
             if(crew.getName().equals(name)) {
                 returnCrew = crew;
                 break;
@@ -25,26 +25,26 @@ public class CrewManager {
 
     public static void addActor(String type,String firstName, String gender, String dateOfBirth, String nationality, int crewID){
         Crew crew = new Actor(type,firstName, gender, dateOfBirth, nationality, crewID);
-        cast.add(crew);
+        crewList.add(crew);
     }
     static void addDirector(String type,String firstName, String gender, String dateOfBirth, String nationality, int crewID,List<String> SocialMedia, List<String> genres){
         Crew crew = new Director(type ,firstName,  gender, dateOfBirth, nationality, crewID, SocialMedia);
-        cast.add(crew);
+        crewList.add(crew);
     }
     static void addProducer(String type,String firstName, String gender, String dateOfBirth, String nationality, int crewID,String productionCompany){
         Crew crew = new Producer(type ,firstName, gender, dateOfBirth, nationality, crewID, productionCompany);
-        cast.add(crew);
+        crewList.add(crew);
     }
 
     public static void displayCrewList(){
-        for (Crew crew : cast){
+        for (Crew crew : crewList){
             System.out.println(crew.getName() + crew.getPreviousProjects());
         }
     }
 
     public Crew getCrewByID(int id){
         Crew returnCrew = null;
-        for(Crew crew : cast){
+        for(Crew crew : crewList){
             if(crew.getCrewID() == id) {
                 returnCrew = crew;
                 break;
@@ -55,14 +55,14 @@ public class CrewManager {
 
     public static void saveCrewListToJson(String filePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.writeValue(new File(filePath), cast);
+        objectMapper.writeValue(new File(filePath), crewList);
     }
 
     // Load the Crew list from a JSON file
     public static void loadCrewListFromJson(String filePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        List<Crew> loadedCast = objectMapper.readValue(new File(filePath), objectMapper.getTypeFactory().constructCollectionType(List.class, Crew.class));
-        cast.addAll(loadedCast);
+        List<Crew> loadedcrewList = objectMapper.readValue(new File(filePath), objectMapper.getTypeFactory().constructCollectionType(List.class, Crew.class));
+        crewList.addAll(loadedcrewList);
     }
 
 }
