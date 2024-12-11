@@ -53,7 +53,9 @@ public abstract class Content {
 
     private int revenue;
 
-    private float rating;
+    private double rating;
+
+    private int totalPeopleRated;
 
     private double duration;
 
@@ -97,6 +99,12 @@ public abstract class Content {
         return country;
     }
 
+    public void rateContent(double rate){
+        rating *= totalPeopleRated;
+        rating += rate;
+        totalPeopleRated++;
+        rating /= totalPeopleRated;
+    }
 //    public LocalDate getReleaseDate() {
 //        return releaseDate;
 //    }
@@ -125,7 +133,7 @@ public abstract class Content {
         return poster;
     }
 
-    public float getRating() {
+    public double getRating() {
         return rating;
     }
 
